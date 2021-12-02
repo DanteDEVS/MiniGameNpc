@@ -4,3 +4,15 @@ api: 3.0.0
 author: dantedevs
 main: Dctx\Entity\Main
 description: A test Form + Npc For DctxGames
+
+permissions:
+  nf.cmd:
+    description: Permission to all commands
+    default: op
+    children:
+      nf.cmd.help:
+        description: Permission for /nf help
+        default: op
+      nf.cmd.npc:
+        description: Permission for /nf npc
+        default: op
