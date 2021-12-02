@@ -10,12 +10,11 @@ class Main extends PluginBase{
 
 	public function onEnable(){
         $this->getLogger()->info("Plugin Is Enabled!");
-		Entity::registerEntity(MainEntity::class, true);
+		Entity::registerEntity(EntityMain::class, true);
     }
 	
     public function onDisable(){
         $this->getLogger()->info("Disabling Plugin!");
-		$this->close();
 	}
 
     public function onHitNPC(EntityDamageByEntityEvent $event) {
