@@ -12,7 +12,7 @@ use pocketmine\{Server, Player};
 final class EntityManager
 {
 	
-	public function setMainEntity(Player $player)
+	public function setEntityMain(Player $player)
 	{
 		$nbt = Entity::createBaseNBT(new Vector3((float)$player->getX(), (float)$player->getY(), (float)$player->getZ()));
 		$nbt->setTag(clone $player->namedtag->getCompoundTag("Skin"));
