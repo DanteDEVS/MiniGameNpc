@@ -44,4 +44,3 @@ class Command extends npccmd{
 	return true;
 	} 
   }
-}
