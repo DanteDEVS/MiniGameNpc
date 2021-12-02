@@ -6,7 +6,7 @@ use Dctx\Entity\Entity\{EntityMain, EntityManager};
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 
-class Command extends npccmd{
+class NpcCommand extends Command{
 
     public function onCommand(CommandSender $sender, Command $cmd, String $label, array $args) : bool {
 		if(strtolower($cmd->getName()) == "nf"){
