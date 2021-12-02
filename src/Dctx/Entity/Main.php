@@ -45,6 +45,7 @@ class Main extends PluginBase{
 				$form->addButton("§eDOUBLES");
 				$form->addButton("§eSQUAD");
 				$player->sendForm($form);
-            }
-        }
-    } 
+			}
+		}
+    }
+}
