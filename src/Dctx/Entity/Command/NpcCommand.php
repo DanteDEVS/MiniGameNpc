@@ -1,5 +1,7 @@
 <?php
 
+namespace Dctx\Entity\Command;
+
 use Dctx\Entity\task\NpcTask;
 use Dctx\Entity\Entity\{EntityMain, EntityManager};
 
