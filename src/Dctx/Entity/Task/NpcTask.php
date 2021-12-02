@@ -38,4 +38,3 @@ class NPC extends Task
 		return $logo . $title . $subtitle;
 	}
 }
-?>
