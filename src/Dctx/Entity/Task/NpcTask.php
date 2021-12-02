@@ -9,7 +9,7 @@ use pocketmine\scheduler\Task;
 use pocketmine\{Server, Player};
 use pocketmine\utils\TextFormat;
 
-class NPC extends Task{
+class NpcTask extends Task{
 
 	public function onRun(int $currentTick)
 	{
