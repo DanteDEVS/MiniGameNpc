@@ -22,7 +22,8 @@ class Command extends npccmd{
                     return true;
                 }
                 $sender->sendMessage("§aNpc+Form Commands: \n" .
-                    "§7/nf npc : Spawn the Npc \n" .
+                    "§7/nf npc : Spawn the Npc\n".
+	            "§7/nf info : SOON\n");
 					break;
 					case "npc":
 					if($sender->hasPermission("nf.npc.cmd")){
