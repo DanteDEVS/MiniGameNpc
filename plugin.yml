@@ -3,7 +3,7 @@ version: 1.0
 api: 3.0.0
 author: dantedevs
 main: Dctx\Entity\Main
-description: A test Form + Npc For DctxGames
+description: Dont Work!
 
 permissions:
   nf.cmd:
