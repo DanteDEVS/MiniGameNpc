@@ -1,9 +1,9 @@
 name: MiniGameNpc
-version: 1.0
-api: [4.0.0]
+version: 1.1
+api: [3.0.0 ,4.0.0]
 author: dantedevs
 main: Dctx\Entity\Main
-description: Dont Work!
+description: Test Plugin
 
 permissions:
   nf.cmd:
