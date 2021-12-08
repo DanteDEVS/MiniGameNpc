@@ -4,15 +4,3 @@ api: [3.0.0 ,4.0.0]
 author: dantedevs
 main: Dctx\Entity\Main
 description: Test Plugin
-
-permissions:
-  nf.cmd:
-    description: Permission to all commands
-    default: op
-    children:
-      nf.cmd.help:
-        description: Permission for /nf help
-        default: op
-      nf.cmd.npc:
-        description: Permission for /nf npc
-        default: op
