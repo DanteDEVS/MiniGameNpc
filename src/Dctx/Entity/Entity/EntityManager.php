@@ -25,7 +25,7 @@ final class EntityManager
 	public function setEntityMain(Player $player)
 	{
 		$nbt = $this->createBaseNBT(new Vector3((float)$player->getPosition()->getX(), (float)$player->getPosition()->getY(), (float)$player->getPosition()->getZ()));
-		$nbt->setTag(clone $player->namedtag->getCompoundTag("Skin"));
+		$nbt->setTag(clone $player->getSkin()->getSkinId());
 		$human = new MainEntity($player->getWorld(), $nbt);
 		$human->setNameTag("");
 		$human->setNameTagVisible(true);
