@@ -25,8 +25,8 @@ class NpcCommand extends Command{
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
        if($sender instanceof Player){
-	   $entity = new EntityMain($sender->getLocation());
-	   $entity->spawnToAll();          
+	   $npc = new EntityManager();
+	   $npc->setMainEntity($sender);       
        } else {
            $sender->sendMessage("You not a player");
        }
