@@ -8,12 +8,13 @@ use pocketmine\entity\EntityFactory;
 use pocketmine\entity\EntityDataHelper;
 use pocketmine\world\World;
 use pocketmine\nbt\tag\CompoundTag;
-use Dctx\Entity\{Form\Form, Form\FormAPI, Entity\EntityManager, Entity\EntityMain, Task\NpcTask};
+use Dctx\Entity\{Form\Form, Form\FormAPI, Entity\EntityManager, Entity\EntityMain, Task\NpcTask, Command\NpcCommand};
 
 class Main extends PluginBase{
 
 	public function onEnable(): void{
         $this->getLogger()->info("Plugin Is Enabled!");
+        $this->getServer()->getCommandMap()->register("mnpc", new NpcCommand($this));
 	$entityfactory = EntityFactory::getInstance();
 	$entityfactory->register(EntityMain::class, function(World $world, CompoundTag $nbt) :EntityMain{
 		return new EntityMain(EntityDataHelper::parseLocation($nbt, $world), $nbt);
