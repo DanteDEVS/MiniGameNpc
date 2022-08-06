@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace Dctx\Entity\Form;
 
 use pocketmine\form\Form as IForm;
-use pocketmine\Player;
+use pocketmine\player\Player;
 
 abstract class FormAPI implements IForm
 {

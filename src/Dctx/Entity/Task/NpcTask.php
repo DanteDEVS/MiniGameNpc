@@ -6,14 +6,14 @@ namespace Dctx\Entity\Task;
 use Dctx\Entity\EntityMain;
 use Dctx\Entity\Main;
 use pocketmine\scheduler\Task;
-use pocketmine\{Server, Player};
+use pocketmine\{Server, player\Player};
 use pocketmine\utils\TextFormat;
 
 class NpcTask extends Task{
 
 	public function onRun(int $currentTick)
 	{
-		$level = Server::getInstance()->getDefaultLevel();
+		$level = Server::getInstance()->getWorldManager()->getDefaultWorld()->getSpawnPosition();
 		foreach ($level->getEntities() as $entity)
 		{
 			if ($entity instanceof EntityMain)
